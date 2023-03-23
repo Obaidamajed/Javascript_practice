@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .photos img{
+            width: 172px;
+            height: 160px;
+            border: 5px solid #aaa;
+
+        }
+         .photos img:hover{
+            cursor: pointer;
+            border: 5px solid #080;
+        }
+        .main img{
+            width: 730px;
+            height: 450px;
+            border: 5px solid #aaa;
+
+        }
+    </style>
+</head>
+<body>
+     
+    <div class="gallary">
+
+        <div class="photos">
+            <img onclick="main.src=this.src" src="a.jpg" alt="">
+            <!-- this=الصورة اللي انا بضغط عليها -->
+            <!-- بقلو لما أضغط على الصورة غيرلي إياها لنفس الصورة اللي النايم تبعها اسمو نايم
+            أو بمعنى آخر بقلو غيرلي السورس للصورة اللي النايم تبعها اسمو نايم وحطلي 
+            بدالو سورس هاي الصورة اللي ضغطت عليها -->
+            <img onclick="main.src=this.src" src="b.jpg" alt="">
+            <img onclick="main.src=this.src" src="c.jpg" alt="">
+            <img onclick="main.src=this.src" src="o.jpg" alt="">
+        </div>
+    
+        <div class="main">
+            <img  src="a.jpg" name="main" alt="">
+        </div>
+
+        <div class="photos">
+            <img onmouseenter="main.src=this.src" src="a.jpg" alt="">
+            <img onmouseenter="main.src=this.src" src="b.jpg" alt="">
+            <img onmouseenter="main.src=this.src" src="c.jpg" alt="">
+            <img onmouseenter="main.src=this.src" src="o.jpg" alt="">
+            <!-- هون مجرد ما بوقف عالصورة بتصير الصورة الرئيسية هي نفسها اللي بوقف عليها الماوس -->
+        </div>
+    
+    </div>
+
+
+
+    
+    <script src="script14.js"></script>
+
+
+</body>
+</html>

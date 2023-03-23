@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+        #red{
+            background-color: red;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #green{
+            background-color: green;
+        }
+        #black{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+<input placeholder="txt" type="text"id="txt">
+<div onclick="setColor(this.id)" id="red"></div>
+<div onclick="setColor(this.id)" id="blue"></div>
+<div onclick="setColor(this.id)" id="green"></div>
+<div onclick="setColor(this.id)" id="black"></div>
+
+
+    <script src="script5.js"></script>
+</body>
+</html>
